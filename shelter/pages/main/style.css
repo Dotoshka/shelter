@@ -20,9 +20,19 @@
     box-sizing: border-box;
 }
 
-.start-screen {
-    background: url(/dotoshka-JS2020Q3/shelter/assets/images/start-screen-background.png)
+h1 {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
 }
+
+.start-screen {
+    /*background: 
+    url(/dotoshka-JS2020Q3/shelter/assets/images/noise_transparent@2x.png), 
+    radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;*/
+    background: url(/dotoshka-JS2020Q3/shelter/assets/images/start-screen-background.png)
+
+    }
 
 .wrapper {
     max-width: 1200px;
@@ -136,4 +146,19 @@
     border: none;
     outline: none; 
     cursor: pointer;
+}
+
+.hero-content__button:hover {
+    background: var(--color-primary-light);
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 175px;
+}
+
+.about-content {
+    max-width: 430px;
 }
