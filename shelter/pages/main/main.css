@@ -12,10 +12,7 @@ h1 {
 }
 
 .start-screen {
-  /*background: 
-    url(/dotoshka-JS2020Q3/shelter/assets/images/noise_transparent@2x.png), 
-    radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;*/
-  background: url(/dotoshka-JS2020Q3/shelter/assets/images/start-screen-background.png);
+  background: url(/dotoshka-JS2020Q3/shelter/assets/images/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
 
 .wrapper {
@@ -98,9 +95,13 @@ h1 {
   line-height: 160%;
 }
 
+.list__link:hover {
+  color: #FAFAFA;
+}
+
 .list__link_active {
   border-bottom: 3px solid #F1CDB3;
-  color: #FFFFFF;
+  color: #FAFAFA;
 }
 
 .hero {
@@ -355,7 +356,7 @@ h1 {
 }
 
 .help {
-  padding: 80px 85px 100px 85px;
+  padding: 80px 0px 100px 0px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -371,31 +372,29 @@ h1 {
   letter-spacing: 0.06em;
   color: #545454;
   text-align: center;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 5px auto;
 }
 
 .help .help-list {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-column-gap: 120px;
-          column-gap: 120px;
-  row-gap: 55px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .help .help-list__item {
+  margin: 55px 60px 0 60px;
   text-align: center;
 }
 
 .help .help-list__title {
   font-family: Georgia;
   font-size: 20px;
+  font-weight: 400;
   line-height: 115%;
   /* or 23px */
   letter-spacing: 0.06em;
@@ -405,20 +404,19 @@ h1 {
 }
 
 .donation {
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 80px;
-  padding-bottom: 100px;
+  padding-top: 82px;
+  padding-bottom: 101px;
 }
 
 .donation .donation-content {
   max-width: 380px;
+  margin-left: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,7 +424,6 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 20px;
 }
 
 .donation .donation-content .donation-content__title {
@@ -437,6 +434,7 @@ h1 {
   /* or 45px */
   letter-spacing: 0.06em;
   color: #545454;
+  margin-bottom: 20px;
 }
 
 .donation .donation-content .donation-content__bank {
@@ -451,14 +449,13 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 15px;
-          column-gap: 15px;
   background: #F1CDB3;
   border-radius: 9px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 15px;
+  margin: 20px 0;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -467,12 +464,14 @@ h1 {
 .donation .donation-content .donation-content__card .donation-content__card-number {
   font-family: Georgia;
   font-size: 20px;
+  font-weight: 400;
   line-height: 115%;
   /* or 23px */
   letter-spacing: 0.06em;
   color: #545454;
   text-align: center;
   text-decoration: none;
+  margin-left: 15px;
 }
 
 .donation .donation-content .download-content__legal {
@@ -481,5 +480,67 @@ h1 {
   font-size: 12px;
   line-height: 150%;
   color: #B2B2B2;
+}
+
+.footer-container {
+  background-color: #545454;
+  background: url(/dotoshka-JS2020Q3/shelter/assets/images/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+.footer {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 40px;
+}
+
+.footer .footer__title {
+  font-family: Georgia;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 130%;
+  /* or 45px */
+  letter-spacing: 0.06em;
+  color: #545454;
+  color: #FFFFFF;
+  padding-top: 16px;
+}
+
+.footer .footer__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-family: Georgia;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 115%;
+  /* or 23px */
+  letter-spacing: 0.06em;
+  color: #545454;
+  text-align: center;
+  color: #F1CDB3;
+  text-align: left;
+}
+
+.footer .footer__icon {
+  margin-right: 20px;
+}
+
+.footer .footer__contact_margin {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footer .footer__location_margin {
+  margin-top: 34px;
+  margin-bottom: 32px;
+}
+
+.footer .footer-content {
+  max-width: 302px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -25,7 +25,7 @@ $color-primary-light: #FDDCC4;
 @mixin h4 {
     font-family: Georgia;
     font-size: 20px;
-   //font-weight: 400;
+    font-weight: 400;
     line-height: 115%;
     /* or 23px */
     letter-spacing: 0.06em;
@@ -82,10 +82,10 @@ h1 {
 }
 
 .start-screen {
-    /*background: 
+    background: 
     url(/dotoshka-JS2020Q3/shelter/assets/images/noise_transparent@2x.png), 
-    radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;*/
-   background: url(/dotoshka-JS2020Q3/shelter/assets/images/start-screen-background.png)
+    radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  // background: url(/dotoshka-JS2020Q3/shelter/assets/images/start-screen-background.png)
 
     }
 
@@ -148,11 +148,14 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 160%;
+    &:hover {
+        color: $color-light-s;
+    }  
 }
 
 .list__link_active {
     border-bottom: 3px solid $color-primary;
-    color: $color-light-xl;
+    color: $color-light-s;
 }
 
 .hero {
@@ -299,25 +302,25 @@ h1 {
 }
 
 .help {
-    padding: 80px 85px 100px 85px ;
+    padding: 80px 0px 100px 0px ;
     flex-direction: column;
     .help__title {
         @include h3;
         text-align: center;
-        margin: 0 auto 60px auto;
+        margin: 0 auto 5px auto;
     }
 
     .help-list {
-        width: 100%;
+        //width: 100%;
         display: flex;
         flex-wrap: wrap;
-        column-gap: 120px;
-        row-gap: 55px;
+        //column-gap: 120px;
+        //row-gap: 55px;
         justify-content: center;
     }
 
     .help-list__item {
-        //margin: 0 auto;
+        margin: 55px 60px 0 60px;
         text-align: center;
     }
 
@@ -328,11 +331,11 @@ h1 {
 }
 
 .donation {
-    column-gap: 30px;
+    //gap: 30px;
     justify-content: center;
     align-items: center;
-    padding-top: 80px;
-    padding-bottom: 100px;
+    padding-top: 82px;
+    padding-bottom: 101px;
 
     //.donation__img {
        // max-width: 55%;
@@ -340,13 +343,15 @@ h1 {
 
     .donation-content {
         max-width: 380px;
+        margin-left: 30px;
         //max-width: 32%;
         display: flex;
         flex-direction: column;
-        row-gap: 20px;
+        //row-gap: 20px;
 
         .donation-content__title {
-            @include h3
+            @include h3;
+            margin-bottom: 20px;
         }
 
         .donation-content__bank {
@@ -359,16 +364,18 @@ h1 {
 
         .donation-content__card {
             display: flex;
-            column-gap: 15px;
+            //column-gap: 15px;
             background: $color-primary;
             border-radius: 9px;
             align-items: center;
             padding: 10px 15px;
+            margin: 20px 0;
             max-width: fit-content;
 
             .donation-content__card-number {
                 @include h4;
                 text-decoration: none;
+                margin-left: 15px;
             }
         }
 
@@ -381,4 +388,50 @@ h1 {
         }
     }
     
+}
+
+.footer-container {
+    background-color: $color-dark-l;
+    background: 
+    url(/dotoshka-JS2020Q3/shelter/assets/images/noise_transparent@2x.png), 
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+.footer {
+    align-items: flex-start;
+    padding-top: 40px;
+
+    .footer__title {
+        @include h3;
+        color: $color-light-xl;
+        padding-top: 16px;
+    }
+
+
+    .footer__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        @include h4;
+        color: $color-primary;
+        text-align: left;
+    }
+
+    .footer__icon {
+        margin-right: 20px;
+    }
+
+    .footer__contact_margin {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .footer__location_margin {
+        margin-top: 34px;
+        margin-bottom: 32px;
+    }
+
+    .footer-content {
+        max-width: 302px;
+    }
 }
