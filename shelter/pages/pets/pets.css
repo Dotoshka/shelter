@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header {
+  width: 100vw;
+  padding: 30px 0;
+  position: fixed;
+  background-color: #FFFFFF;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logo__title {
+  color: #545454;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 32px;
+  letter-spacing: 0.06em;
+  line-height: 110%;
+}
+
+.logo__subtitle {
+  color: #292929;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  line-height: 110%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 443px;
+}
+
+.list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  padding-bottom: 5px;
+}
+
+.list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list__link {
+  color: #545454;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 160%;
+}
+
+.list__link:hover {
+  color: #292929;
+}
+
+.list__link_active {
+  padding-top: 3px;
+  border-bottom: 3px solid #F1CDB3;
+  color: #292929;
+}
+
+.friends-container {
+  background-color: #F6F6F6;
+  padding-top: 120px;
+}
+
+.friends-container .friends {
+  padding: 80px 0 100px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.friends-container .friends__title {
+  font-family: Georgia;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 130%;
+  /* or 45px */
+  letter-spacing: 0.06em;
+  color: #545454;
+  text-align: center;
+}
+
+.slider-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 45px 0;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.slider-cards .slider-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0;
+  background-color: #FAFAFA;
+}
+
+.slider-cards .slider-card:hover {
+  background-color: #FFFFFF;
+}
+
+.slider-cards .slider-card__title {
+  font-family: Georgia;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin-top: 30px;
+}
+
+.slider-cards .slider-card__button {
+  font-family: Georgia;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  background: none;
+  border-radius: 100px;
+  border: 2px solid #F1CDB3;
+  outline: none;
+  cursor: pointer;
+  padding: 13px 43px;
+  display: block;
+  margin: 30px 0;
+}
+
+.slider-cards .slider-card__button:hover {
+  background: #FDDCC4;
+  border: 2px solid #FDDCC4;
+}
+
+.slider-cards .slider-card__button:disabled {
+  border: 2px solid #CDCDCD;
+  background: none;
+  color: #CDCDCD;
+  cursor: initial;
+}
+
+.slider-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider-buttons .slider__button {
+  font-family: Georgia;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  background: none;
+  border-radius: 100px;
+  border: 2px solid #F1CDB3;
+  outline: none;
+  cursor: pointer;
+  padding: 13px 43px;
+  font-family: Georgia;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 115%;
+  /* or 23px */
+  letter-spacing: 0.06em;
+  color: #545454;
+  text-align: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  padding: 0;
+  margin: 0 10px;
+}
+
+.slider-buttons .slider__button:hover {
+  background: #FDDCC4;
+  border: 2px solid #FDDCC4;
+}
+
+.slider-buttons .slider__button:disabled {
+  border: 2px solid #CDCDCD;
+  background: none;
+  color: #CDCDCD;
+  cursor: initial;
+}
+
+.slider-buttons .slider__button_active {
+  background-color: #F1CDB3;
+}
+
+.footer-container {
+  background: url(/dotoshka-JS2020Q3/shelter/assets/images/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+.footer {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .footer__title {
+  font-family: Georgia;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 130%;
+  /* or 45px */
+  letter-spacing: 0.06em;
+  color: #545454;
+  color: #FFFFFF;
+  padding-top: 16px;
+}
+
+.footer .footer__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-family: Georgia;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 115%;
+  /* or 23px */
+  letter-spacing: 0.06em;
+  color: #545454;
+  text-align: center;
+  color: #F1CDB3;
+  text-align: left;
+}
+
+.footer .footer__icon {
+  margin-right: 20px;
+}
+
+.footer .footer__contact_margin {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footer .footer__location_margin {
+  margin-top: 34px;
+  margin-bottom: 32px;
+}
+
+.footer .footer-content {
+  max-width: 302px;
+}
+/*# sourceMappingURL=pets.css.map */
