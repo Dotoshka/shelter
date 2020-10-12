@@ -26,6 +26,149 @@ html {
   height: auto;
 }
 
+/* Footer */
+.footer-container {
+  background: url(/dotoshka-JS2020Q3/shelter/assets/images/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+.footer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 4rem;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 6rem;
+}
+
+.footer-content__contacts {
+  margin-right: 16rem;
+}
+
+.footer-content__contacts a:nth-child(2) {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.footer-content__location a:nth-child(2) {
+  margin-top: 3.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.footer-content__location a:nth-child(2) span span {
+  display: block;
+}
+
+.footer-content__title {
+  font-family: Georgia;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  color: #FFFFFF;
+}
+
+.footer-content__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-family: Georgia;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  text-align: center;
+  color: #F1CDB3;
+  text-align: left;
+}
+
+.footer-content__icon {
+  margin-right: 2rem;
+}
+
+/* Footer tablet*/
+@media (max-width: 1279px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 3rem;
+  }
+  .footer-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 6.5rem;
+    width: 100%;
+  }
+  .footer-content__contacts {
+    margin-right: 8.5%;
+  }
+}
+
+/* Footer mobile*/
+@media (max-width: 767px) {
+  .footer__img-wrapper {
+    max-width: 86.7%;
+  }
+  .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 4rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-content__contacts {
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+  .footer-content__contacts a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-content__location a:nth-child(2) {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .footer-content__title {
+    font-family: Georgia;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+    max-width: 91.8vw;
+  }
+  .footer-content__title p {
+    display: inline;
+  }
+}
+
 /* Header */
 .header-container {
   width: 100%;
@@ -518,79 +661,6 @@ html {
   color: #B2B2B2;
 }
 
-/* Footer */
-.footer-container {
-  background: url(/dotoshka-JS2020Q3/shelter/assets/images/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
-}
-
-.footer {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-top: 4rem;
-}
-
-.footer-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 6rem;
-}
-
-.footer-content__contacts {
-  margin-right: 16rem;
-}
-
-.footer-content__contacts a:nth-child(2) {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
-.footer-content__location a:nth-child(2) {
-  margin-top: 3.4rem;
-  margin-bottom: 3.2rem;
-}
-
-.footer-content__location a:nth-child(2) span span {
-  display: block;
-}
-
-.footer-content__title {
-  font-family: Georgia;
-  font-size: 3.5rem;
-  font-weight: 400;
-  line-height: 130%;
-  letter-spacing: 0.06em;
-  color: #545454;
-  color: #FFFFFF;
-}
-
-.footer-content__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-  font-family: Georgia;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 115%;
-  letter-spacing: 0.06em;
-  color: #545454;
-  text-align: center;
-  color: #F1CDB3;
-  text-align: left;
-}
-
-.footer-content__icon {
-  margin-right: 2rem;
-}
-
 /* Tablet */
 @media (max-width: 1279px) {
   /* Common */
@@ -672,27 +742,6 @@ html {
     max-width: 54%;
     margin-left: 0;
     margin-bottom: 6rem;
-  }
-  /* Footer */
-  .footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-top: 3rem;
-  }
-  .footer-content {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 6.5rem;
-    width: 100%;
-  }
-  .footer-content__contacts {
-    margin-right: 8.5%;
   }
 }
 
@@ -918,49 +967,6 @@ html {
   }
   .donation-content__legal {
     text-align: justify;
-  }
-  /* Footer */
-  .footer__img-wrapper {
-    max-width: 86.7%;
-  }
-  .footer-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 4rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .footer-content__contacts {
-    margin-right: 0;
-    margin-bottom: 4rem;
-  }
-  .footer-content__contacts a {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .footer-content__location a:nth-child(2) {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-  .footer-content__title {
-    font-family: Georgia;
-    font-size: 2.5rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 130%;
-    letter-spacing: 0.06em;
-    color: #545454;
-    text-align: center;
-    color: #FFFFFF;
-    margin: 0 auto;
-    max-width: 91.8vw;
-  }
-  .footer-content__title p {
-    display: inline;
   }
 }
 /*# sourceMappingURL=main.css.map */
