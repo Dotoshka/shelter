@@ -109,6 +109,10 @@ html {
   color: #FAFAFA;
 }
 
+.burger-menu {
+  display: none;
+}
+
 /* Start screen */
 .start-screen-container {
   background: url(/dotoshka-JS2020Q3/shelter/assets/images/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
@@ -139,7 +143,7 @@ html {
       -ms-flex-align: start;
           align-items: flex-start;
   max-width: 39%;
-  padding-bottom: 8rem;
+  margin-bottom: 8rem;
 }
 
 .start-screen-content__title {
@@ -332,6 +336,8 @@ html {
 
 .slider-card:hover {
   background-color: #FFFFFF;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .slider-card:not(:last-child) {
@@ -411,6 +417,10 @@ html {
   text-align: center;
 }
 
+.help-list__item img {
+  margin-bottom: 2.7rem;
+}
+
 .help-list__title {
   font-family: Georgia;
   font-size: 2rem;
@@ -419,7 +429,6 @@ html {
   letter-spacing: 0.06em;
   color: #545454;
   text-align: center;
-  margin-top: 2.7rem;
 }
 
 /* Donation */
@@ -607,7 +616,7 @@ html {
   }
   .start-screen-content {
     max-width: 65%;
-    padding-bottom: 10rem;
+    margin-bottom: 10rem;
   }
   .start-screen-content__button {
     -ms-flex-item-align: center;
@@ -629,7 +638,7 @@ html {
   .about-content {
     margin-left: 0;
     margin-bottom: 8rem;
-    max-width: 61.5%;
+    max-width: 61%;
   }
   /* Friends */
   .slider-cards {
@@ -684,6 +693,274 @@ html {
   }
   .footer-content__contacts {
     margin-right: 8.5%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  /* Common */
+  .wrapper {
+    max-width: 93.75%;
+  }
+  /* Header */
+  .burger-menu {
+    display: initial;
+  }
+  .burger-menu:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .menu {
+    display: none;
+  }
+  .header-container {
+    padding-right: 5.3rem;
+    padding-left: 3%;
+  }
+  .header {
+    max-width: 100%;
+  }
+  /* Start screen */
+  .start-screen-container {
+    padding-top: 15rem;
+  }
+  .start-screen {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .start-screen-content {
+    max-width: 100%;
+    margin-bottom: 10.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .start-screen-content__title {
+    font-family: Georgia;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .start-screen-content__title p {
+    display: inline-block;
+  }
+  .start-screen__img-wrapper {
+    max-width: 86.6%;
+  }
+  .start-screen__img-wrapper img {
+    max-width: 56.9rem;
+  }
+  /* About */
+  .about {
+    padding: 4.2rem 0;
+  }
+  .about-content {
+    margin-bottom: 4.2rem;
+    max-width: 90%;
+    text-align: justify;
+  }
+  .about-content__title {
+    font-family: Georgia;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    text-align: center;
+  }
+  .about-content__title p {
+    display: inline-block;
+  }
+  .about__img-wrapper {
+    max-width: 86.6%;
+  }
+  /* Friends */
+  .friends {
+    padding-top: 4rem;
+    padding-bottom: 4.2rem;
+  }
+  .friends__title {
+    font-family: Georgia;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    text-align: center;
+  }
+  .friends__title p {
+    display: inline-block;
+  }
+  .slider {
+    margin: 4.2rem 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .slider-cards {
+    margin-bottom: 2rem;
+    width: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .slider-card:first-child {
+    margin: 0;
+  }
+  .slider-card:nth-child(2) {
+    display: none;
+  }
+  .slider-button:first-child {
+    margin-right: 26.6%;
+  }
+  /* Help */
+  .help {
+    padding: 4.2rem 0;
+  }
+  .help__title {
+    font-family: Georgia;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    text-align: center;
+    margin-bottom: 1.2rem;
+  }
+  .help__title p {
+    display: inline-block;
+  }
+  .help-list {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .help-list__item {
+    width: 47%;
+    margin: 0;
+    margin-top: 3rem;
+  }
+  .help-list__item:nth-child(odd) {
+    margin-right: 6%;
+  }
+  .help-list__item img {
+    max-width: 35.5%;
+    margin-bottom: 1.8rem;
+  }
+  .help-list__title {
+    font-family: Georgia;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    text-align: center;
+  }
+  /* Donation */
+  .donation {
+    padding: 4.2rem 0;
+  }
+  .donation__img-wrapper {
+    max-width: 87%;
+  }
+  .donation-content {
+    max-width: 93.7%;
+    margin-bottom: 4.2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .donation-content__title {
+    font-family: Georgia;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    text-align: center;
+  }
+  .donation-content__title p {
+    display: inline-block;
+  }
+  .donation-content__bank {
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 160%;
+    letter-spacing: 0;
+  }
+  .donation-content__card-number {
+    font-family: Georgia;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    text-align: center;
+  }
+  .donation-content__legal {
+    text-align: justify;
+  }
+  /* Footer */
+  .footer__img-wrapper {
+    max-width: 86.7%;
+  }
+  .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 4rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-content__contacts {
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+  .footer-content__contacts a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-content__location a:nth-child(2) {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .footer-content__title {
+    font-family: Georgia;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+    max-width: 91.8vw;
+  }
+  .footer-content__title p {
+    display: inline;
   }
 }
 /*# sourceMappingURL=main.css.map */

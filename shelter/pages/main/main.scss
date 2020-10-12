@@ -35,11 +35,32 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20
     color: $color-dark-l;   
 }
 
+@mixin h3-mobile {
+    font-family: Georgia;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-dark-l; 
+    text-align: center;  
+}
+
 @mixin h4 {
     font-family: Georgia;
     font-size: 2rem;
     font-weight: 400;
     line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+    text-align: center;
+}
+
+@mixin h5 {
+    font-family: Georgia;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 110%;
     letter-spacing: 0.06em;
     color: $color-dark-l;
     text-align: center;
@@ -169,6 +190,10 @@ html {
     }  
 }
 
+.burger-menu {
+    display: none;
+}
+
 /* Start screen */
 
 .start-screen-container { 
@@ -186,7 +211,7 @@ html {
         justify-content: center;
         align-items: flex-start;
         max-width: 39%;
-        padding-bottom: 8rem;
+        margin-bottom: 8rem;
 
         &__title {
             font-family: Georgia;
@@ -269,7 +294,6 @@ html {
     &-cards {
         display: flex;
         align-items: center;
-        //overflow: hidden;
     }
 
     &-card {
@@ -279,7 +303,7 @@ html {
         background-color: $color-light-s;
         &:hover {
             background-color: $color-light-xl;
-            //transform: scale(1.01);
+            transform: scale(1.01);
         }
 
         &:not(:last-child) { margin-right: 9rem; }
@@ -322,12 +346,13 @@ html {
         &__item {
             margin: 5.5rem 6rem 0;
             text-align: center;
+
+            img {
+                margin-bottom: 2.7rem;
+            }
         }
     
-        &__title {
-            @include h4;
-            margin-top: 2.7rem;
-        }
+        &__title { @include h4; }
     }
 }
 
@@ -410,7 +435,6 @@ html {
         }
 
         &__location a:nth-child(2) {
-            //max-width: 30rem;
             margin-top: 3.4rem;
             margin-bottom: 3.2rem;
             span span {
@@ -467,15 +491,13 @@ html {
     
         &-content {
             max-width: 65%;
-            padding-bottom: 10rem;
+            margin-bottom: 10rem;
             
             &__button { align-self: center; }
         }
 
         &__img-wrapper {
             align-self: flex-end;
-            //max-width: 80.4%;
-            //width: 74.1vw;
             max-width: 56.9rem;
         }
     }
@@ -488,7 +510,7 @@ html {
         &-content {
             margin-left: 0;
             margin-bottom: 8rem;
-            max-width: 61.5%;
+            max-width: 61%;
         }
     }
 
@@ -541,6 +563,232 @@ html {
             
             &__contacts {
                 margin-right: 8.5%;
+            }
+        }
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+
+    /* Common */
+
+    .wrapper {
+        max-width: 93.75%;
+    }
+
+    /* Header */
+
+    .burger-menu {
+        display: initial;
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+        }    
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .header-container {
+        padding-right: 5.3rem;
+        padding-left: 3%;
+    }
+
+    .header {
+        max-width: 100%;
+    }
+
+    /* Start screen */   
+
+    .start-screen-container { 
+        padding-top: 15rem; 
+    }
+
+    .start-screen {
+        flex-direction: column;
+    
+        &-content {
+            max-width: 100%;
+            margin-bottom: 10.5rem;
+            align-items: center;
+            text-align: center;
+
+            &__title {
+                @include h3-mobile;
+                color: $color-light-xl;
+                p {
+                    display: inline-block;
+                } 
+            }
+        }
+
+        &__img-wrapper {
+            max-width: 86.6%;
+            img {
+                max-width: 56.9rem;
+            }
+        }
+    }
+    
+    /* About */
+
+    .about {
+        padding: 4.2rem 0;
+        
+        &-content {
+            margin-bottom: 4.2rem;
+            max-width: 90%;
+            text-align: justify;
+            &__title {
+                @include h3-mobile;
+                p {
+                    display: inline-block;
+                }
+            }
+        }
+
+        &__img-wrapper {
+            max-width: 86.6%;
+        }
+    }
+
+    /* Friends */
+
+    .friends {
+        padding-top: 4rem;
+        padding-bottom: 4.2rem;
+
+        &__title {
+            @include h3-mobile;
+            p {
+                display: inline-block;
+            }
+        }
+    }
+
+    .slider {
+        margin: 4.2rem 0;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &-cards {
+            margin-bottom: 2rem;
+            width: 100%;
+            order: -1;
+        }
+
+        &-card {
+            &:first-child { margin: 0; }
+            &:nth-child(2) { display: none; }
+        }
+
+        &-button:first-child {
+            margin-right: 26.6%;
+        }
+    }
+
+    /* Help */
+
+    .help {
+
+        padding: 4.2rem 0;
+
+        &__title {
+            @include h3-mobile;
+            margin-bottom: 1.2rem;
+            p {
+                display: inline-block;
+            }
+        }
+    }
+
+    .help-list {
+        justify-content: left;
+        align-items: center;
+
+        &__item { 
+            width: 47%;
+            margin: 0;
+            margin-top: 3rem;
+    
+                &:nth-child(odd) {
+                    margin-right: 6%;
+                }
+            
+                img {
+                    max-width: 35.5%;
+                    margin-bottom: 1.8rem;
+                }
+        }
+
+        &__title {
+            @include h5;
+        }
+    }
+
+    /* Donation */
+
+    .donation {
+        padding: 4.2rem 0;
+
+        &__img-wrapper { max-width: 87%; }
+
+        &-content {
+            max-width: 93.7%;
+            margin-bottom: 4.2rem;
+            align-items: center;
+
+            &__title {
+                @include h3-mobile;
+                p { display: inline-block; }
+            }
+
+            &__bank {
+                @include paragraph-l;
+                letter-spacing: 0;
+            }
+
+            &__card-number { @include h5; }
+            &__legal { text-align: justify; }
+        }  
+    }
+
+    /* Footer */
+
+    .footer {
+
+        &__img-wrapper {
+            max-width: 86.7%;
+        }
+
+        &-content {
+            flex-direction: column;
+            margin-bottom: 4rem;
+            align-items: center;
+            
+            &__contacts {
+                margin-right: 0;
+                margin-bottom: 4rem;
+
+                a { justify-content: center; }
+            }
+
+            &__location {
+                a:nth-child(2) {
+                margin-top: 4rem;
+                margin-bottom: 4rem;
+                }
+            }
+
+            &__title {
+                @include h3-mobile;
+                color: $color-light-xl;
+                margin: 0 auto;
+                max-width: 91.8vw;
+                p { display: inline; }  
             }
         }
     }
