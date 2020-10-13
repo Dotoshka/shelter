@@ -1,78 +1,25 @@
 @import "../../assets/styles/common-styles.scss";
 
-/* Header */
+/* Header main */
 
 .header-container {
-    width: 100%;
     padding: 6rem 0;
     position: absolute;
-
-    h1 {
-        width: 1px;
-        height: 1px;
-        opacity: 0;
-    }
 }
 
-.header {
-    justify-content: space-between;
-    align-items: center;
-}
+.logo__title { color: $color-primary; }
+.logo__subtitle { color: $color-light-xl; }
 
-.logo {
-    display: flex;
-    flex-direction: column;
+.list {
 
-    &__title {
-        color: $color-primary;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 3.2rem;
-        letter-spacing: 0.06em;
-        line-height: 110%;
+    .list__link {
+        color: $color-dark-s;
+        &:hover {
+            color: $color-light-s;
+        }  
     }
     
-    &__subtitle {
-        color: $color-light-xl;
-        font-family: Arial, Helvetica, sans-serif; 
-        font-size: 1.3rem;
-        letter-spacing: 0.1em;
-        line-height: 110%;
-        margin-top: 1rem;
-        text-align: center;
-    }
-}
-
-.menu {
-
-    .list {
-        width: 44.3rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-        padding-bottom: 0.5rem;
-
-        &__item_active {
-            padding-top: 0.3rem;
-            border-bottom: 3px solid $color-primary;
-            color: $color-light-s;
-        }
-        
-        &__link {
-            color: $color-dark-s;
-            text-decoration: none;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 1.5rem;
-            line-height: 160%;
-            &:hover {
-                color: $color-light-s;
-            }  
-        }
-    }  
-}
-
-.burger-menu {
-    display: none;
+     .list__item_active a { color: $color-light-s;}
 }
 
 /* Start screen */
@@ -152,7 +99,6 @@
     &__button { @include button_primary; }
 }
 
-
 .slider {
     display: flex;
     margin: 6rem 0;
@@ -160,50 +106,16 @@
     justify-content: space-between;
     align-items: center;
 
-    &-button {
-        @include button_secondary;
-        width: 5.2rem;
-        height: 5.2rem;
-        border-radius: 50%;
-        padding: 0;
-
-        &__icon { 
+    &-button__icon { 
             margin: 2.1rem 1.7rem;
         }
-    }
 
     &-cards {
         display: flex;
         align-items: center;
     }
 
-    &-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: $color-light-s;
-        &:hover {
-            background-color: $color-light-xl;
-            transform: scale(1.01);
-        }
-
-        &:not(:last-child) { margin-right: 9rem; }
-
-        &__title {
-            font-family: Georgia;
-            font-size: 2rem;
-            line-height: 110%;
-            letter-spacing: 0.06em;
-            color: $color-dark-l;
-            margin-top: 3.1rem;
-            
-        }
-
-        &__button {
-            @include button_secondary;
-            margin: 3rem auto;
-        }
-    }
+    &-card:not(:last-child) { margin-right: 9rem; }
 }
 
 /* Help */
@@ -298,12 +210,6 @@
 
 @media (max-width: 1279px) {
 
-    /* Common */
-
-    .wrapper {
-        max-width: 92.18%;
-    }
-
     /* Header */
 
     .header-container {
@@ -388,13 +294,15 @@
 
 @media (max-width: 767px) {
 
-    /* Common */
-    
-    .wrapper {
-        max-width: 93.75%;
+    /* Header */
+
+    .header-container {
+        padding-right: 5.3rem;
+        padding-left: 3%;
     }
 
-    /* Header */
+    .header { max-width: 100%; }
+    .menu { display: none; }
 
     .burger-menu {
         display: initial;
@@ -402,19 +310,6 @@
             cursor: pointer;
             transform: scale(1.05);
         }    
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .header-container {
-        padding-right: 5.3rem;
-        padding-left: 3%;
-    }
-
-    .header {
-        max-width: 100%;
     }
 
     /* Start screen */   
