@@ -500,9 +500,6 @@ html {
   .burger-menu {
     display: initial;
   }
-  .burger-menu svg line {
-    stroke: #000;
-  }
   .burger-menu:hover {
     cursor: pointer;
     -webkit-transform: scale(1.05);

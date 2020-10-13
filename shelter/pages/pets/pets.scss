@@ -116,7 +116,6 @@
 
     .burger-menu {
         display: initial;
-        svg line { stroke: #000; }
         &:hover {
             cursor: pointer;
             transform: scale(1.05);
