@@ -91,6 +91,12 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20
     &:hover {
         background: $color-primary-light;
         border: 2px solid $color-primary-light;
+    }
+    &:disabled {
+        border: 2px solid $color-dark-s;
+        background: none;
+        color: $color-dark-s;
+        cursor: initial;
     }   
 }
 
@@ -106,16 +112,128 @@ html {
     font-size: 10px;
 }
 
+.content__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Wrapper */
+
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
 }
 
-.content__img {
-    display: block;
+@media (max-width: 1279px) {
+    .wrapper { max-width: 92.18%; }
+}
+
+@media (max-width: 767px) {
+    .wrapper { max-width: 93.75%; }
+}
+
+/* Header */
+
+.header-container {
     width: 100%;
-    height: auto;
+
+    h1 {
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+    }
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 3.2rem;
+        letter-spacing: 0.06em;
+        line-height: 110%;
+    }
+    
+    &__subtitle {
+        font-family: Arial, Helvetica, sans-serif; 
+        font-size: 1.3rem;
+        letter-spacing: 0.1em;
+        line-height: 110%;
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+.menu {
+
+    .list {
+        width: 44.3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        padding-bottom: 0.5rem;
+        
+        &__link {
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5rem;
+            line-height: 160%;
+        }
+
+        &__item_active {
+            padding-top: 0.3rem;
+            border-bottom: 3px solid $color-primary;
+        }
+    }  
+}
+
+.burger-menu {
+    display: none;
+}
+
+/* Friends */
+
+.slider-button {
+    @include button_secondary;
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.slider-card {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-light-s;
+    &:hover {
+        background-color: $color-light-xl;
+        transform: scale(1.01);
+    }
+
+    &__title {
+        font-family: Georgia;
+        font-size: 2rem;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+        color: $color-dark-l;
+        margin-top: 3.1rem;    
+    }
+
+    &__button {
+        @include button_secondary;
+        margin: 3rem auto;
+    }
 }
 
 /* Footer */
