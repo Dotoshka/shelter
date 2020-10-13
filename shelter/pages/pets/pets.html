@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header-container">
         <h1>Cozy House</h1>
-        <div class="wrapper">
+        <div class="wrapper header">
             <div class="logo">
                 <div class="logo__title">
                     Cozy House
@@ -23,27 +23,35 @@
             <nav class="menu">
                 <ul class="list">
                     <li class="list__item">
-                        <a class="list__link list__link_disabled" href="#">
+                        <a class="list__link" href="../main/main.html">
                             About the shelter
                         </a>
                     </li>
-                    <li class="list__item">
-                        <a class="list__link list__link_active" href="#">
+                    <li class="list__item list__item_active list__item_active">
+                        <a class="list__link"
+                            href="#">
                             Our pets
                         </a>
                     </li>
                     <li class="list__item">
-                        <a class="list__link list__link_disabled" href="#">
+                        <a class="list__link" href="#">
                             Help the shelter
                         </a>
                     </li>
                     <li class="list__item">
-                        <a class="list__link list__link_disabled" href="#">
+                        <a class="list__link" href="#">
                             Contacts
                         </a>
                     </li>
                 </ul>
             </nav>
+            <div class="burger-menu">
+                <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="21" x2="30" y2="21" stroke="#F1CDB3" stroke-width="2"/>
+                    <line y1="11" x2="30" y2="11" stroke="#F1CDB3" stroke-width="2"/>
+                    <line y1="1" x2="30" y2="1" stroke="#F1CDB3" stroke-width="2"/>
+                </svg>                    
+            </div>
         </div>
     </header>
     <main>
@@ -54,69 +62,85 @@
                     <p>are looking for a house</p>
                 </h3>
                 <div class="slider-cards">
-                    <div class="slider-card">
-                        <img class="slider-card__img" src="/dotoshka-JS2020Q3/shelter/assets/images/pets-katrine.png"
-                            alt="Katrine">
-                        <p class="slider-card__title">Katrine</p>
-                        <button class="slider-card__button">Learn more</button>
+                    <div class="card-container">
+                        <div class="slider-card">
+                            <img class="slider-card__img" src="/dotoshka-JS2020Q3/shelter/assets/images/pets-katrine.png"
+                                alt="Katrine">
+                            <p class="slider-card__title">Katrine</p>
+                            <button class="slider-card__button">Learn more</button>
+                        </div>
                     </div>
-                    <div class="slider-card">
-                        <img class="slider-card__img" src="/dotoshka-JS2020Q3/shelter/assets/images/pets-jennifer.png"
-                            alt="Jennifer">
-                        <p class="slider-card__title">Jennifer</p>
-                        <button class="slider-card__button">Learn more</button>
+                    <div class="card-container">
+                        <div class="slider-card">
+                            <img class="slider-card__img" src="/dotoshka-JS2020Q3/shelter/assets/images/pets-jennifer.png"
+                                alt="Jennifer">
+                            <p class="slider-card__title">Jennifer</p>
+                            <button class="slider-card__button">Learn more</button>
+                        </div> 
                     </div>
-                    <div class="slider-card">
-                        <img class="slider-card__img" src="/dotoshka-JS2020Q3/shelter/assets/images/pets-woody.png"
-                            alt="Woody">
-                        <p class="slider-card__title">Woody</p>
-                        <button class="slider-card__button">Learn more</button>
+                    <div class="card-container">
+                        <div class="slider-card">
+                            <img class="slider-card__img" src="/dotoshka-JS2020Q3/shelter/assets/images/pets-woody.png"
+                                alt="Woody">
+                            <p class="slider-card__title">Woody</p>
+                            <button class="slider-card__button">Learn more</button>
+                        </div>
                     </div>
-                    <div class="slider-card">
-                        <img class="slider-card__img" src="/dotoshka-JS2020Q3/shelter/assets/images/pets-sophia.png"
-                            alt="Woody">
-                        <p class="slider-card__title">Sophia</p>
-                        <button class="slider-card__button">Learn more</button>
+                    <div class="card-container">
+                        <div class="slider-card">
+                            <img class="slider-card__img" src="/dotoshka-JS2020Q3/shelter/assets/images/pets-sophia.png"
+                                alt="Woody">
+                            <p class="slider-card__title">Sophia</p>
+                            <button class="slider-card__button">Learn more</button>
+                        </div> 
                     </div>
-                    <div class="slider-card">
-                        <img class="slider-card__img" src="/dotoshka-JS2020Q3/shelter/assets/images/pets-timmy.png"
-                            alt="Woody">
-                        <p class="slider-card__title">Timmy</p>
-                        <button class="slider-card__button">Learn more</button>
+                    <div class="card-container">
+                        <div class="slider-card">
+                            <img class="slider-card__img" src="/dotoshka-JS2020Q3/shelter/assets/images/pets-timmy.png"
+                                alt="Woody">
+                            <p class="slider-card__title">Timmy</p>
+                            <button class="slider-card__button">Learn more</button>
+                        </div>   
                     </div>
-                    <div class="slider-card">
-                        <img class="slider-card__img" src="/dotoshka-JS2020Q3/shelter/assets/images/pets-charly.png"
-                            alt="Woody">
-                        <p class="slider-card__title">Charly</p>
-                        <button class="slider-card__button">Learn more</button>
+                    <div class="card-container">
+                        <div class="slider-card">
+                            <img class="slider-card__img" src="/dotoshka-JS2020Q3/shelter/assets/images/pets-charly.png"
+                                alt="Woody">
+                            <p class="slider-card__title">Charly</p>
+                            <button class="slider-card__button">Learn more</button>
+                        </div> 
                     </div>
-                    <div class="slider-card">
-                        <img class="slider-card__img" src="/dotoshka-JS2020Q3/shelter/assets/images/pets-scarlet.png"
-                            alt="Woody">
-                        <p class="slider-card__title">Scarlett</p>
-                        <button class="slider-card__button">Learn more</button>
+                    <div class="card-container">
+                        <div class="slider-card">
+                            <img class="slider-card__img" src="/dotoshka-JS2020Q3/shelter/assets/images/pets-scarlet.png"
+                                alt="Woody">
+                            <p class="slider-card__title">Scarlett</p>
+                            <button class="slider-card__button">Learn more</button>
+                        </div>
                     </div>
-                    <div class="slider-card">
-                        <img class="slider-card__img" src="/dotoshka-JS2020Q3/shelter/assets/images/pets-freddie.png"
-                            alt="Woody">
-                        <p class="slider-card__title">Freddie</p>
-                        <button class="slider-card__button">Learn more</button>
-                    </div>
+                    <div class="card-container">
+                        <div class="slider-card">
+                            <img class="slider-card__img" src="/dotoshka-JS2020Q3/shelter/assets/images/pets-freddie.png"
+                                alt="Woody">
+                            <p class="slider-card__title">Freddie</p>
+                            <button class="slider-card__button">Learn more</button>
+                        </div>
+                    </div>   
                 </div>
                 <div class="slider-buttons">
-                    <button class="slider__button" type="button" disabled>
+                    <button class="slider-button" type="button" disabled>
                         <<
                     </button>
-                    <button class="slider__button" disabled>
+                    <button class="slider-button" disabled>
                         <
                     </button>
-                    <button class="slider__button slider__button_active">
+                    <button class="slider-button slider-button_active">
                         1
                     </button>
-                    <button class="slider__button">
+                    <button class="slider-button">
                         >
                     </button>
-                    <button class="slider__button">
+                    <button class="slider-button">
                         >>
                     </button>
                 </div>
@@ -125,41 +149,47 @@
     </main>
     <footer class="footer-container">
         <div class="wrapper footer">
-            <div class="footer-content contacts">
-                <h3 class="footer__title">
-                    <p>For questions</p>
-                    <p>and suggestions</p>
-                </h3>
-                <a class="footer__link footer__contact_margin" href="mailto:email@shelter.com" target="_blank">
-                    <img class="footer__icon" src="/dotoshka-JS2020Q3/shelter/assets/icons/icon-email.svg"
-                        alt="E-mail" />
-                    email@shelter.com
-                </a>
-                <a class="footer__link" href="tel:+136745677554" target="_blank">
-                    <img class="footer__icon" src="/dotoshka-JS2020Q3/shelter/assets/icons/icon-phone.svg"
-                        alt="E-mail" />
-                    +13 674 567 75 54
-                </a>
+            <div class="footer-content">
+                <div class="footer-content__contacts">
+                    <h3 class="footer-content__title">
+                        <p>For questions</p>
+                        <p>and suggestions</p>
+                    </h3>
+                    <a class="footer-content__link" href="mailto:email@shelter.com" target="_blank">
+                        <img class="footer-content__icon" src="/dotoshka-JS2020Q3/shelter/assets/icons/icon-email.svg"
+                            alt="E-mail" />
+                        email@shelter.com
+                    </a>
+                    <a class="footer-content__link" href="tel:+136745677554" target="_blank">
+                        <img class="footer-content__icon" src="/dotoshka-JS2020Q3/shelter/assets/icons/icon-phone.svg"
+                            alt="E-mail" />
+                        +13 674 567 75 54
+                    </a>
+                </div>
+                <div class="footer-content__location">
+                    <h3 class="footer-content__title">
+                        <p>We are waiting</p>
+                        <p>for your visit</p>
+                    </h3>
+                    <a class="footer-content__link" href="https://goo.gl/maps/HouZCQU6gogQcJx47" target="_blank">
+                        <img class="footer-content__icon" src="/dotoshka-JS2020Q3/shelter/assets/icons/icon-marker.svg"
+                            alt="E-mail" />
+                        <span class="footer-content__text">
+                            <span>1 Central Street, Boston</span>
+                            <span>(entrance from the store)</span>
+                        </span>  
+                    </a>
+                    <a class="footer-content__link" href="https://goo.gl/maps/kNLszwUGrpm9ne1p7" target="_blank">
+                        <img class="footer-content__icon" src="/dotoshka-JS2020Q3/shelter/assets/icons/icon-marker.svg"
+                            alt="E-mail" />
+                        <p>18 South Park, London </p>
+                    </a>
+                </div>
             </div>
-            <div class="footer-content location">
-                <h3 class="footer__title">
-                    <p>We are waiting</p>
-                    <p>for your visit</p>
-                </h3>
-                <a class="footer__link footer__location_margin" href="https://goo.gl/maps/HouZCQU6gogQcJx47"
-                    target="_blank">
-                    <img class="footer__icon" src="/dotoshka-JS2020Q3/shelter/assets/icons/icon-marker.svg"
-                        alt="E-mail" />
-                    1 Central Street, Boston
-                    (entrance from the store)
-                </a>
-                <a class="footer__link" href="https://goo.gl/maps/kNLszwUGrpm9ne1p7" target="_blank">
-                    <img class="footer__icon" src="/dotoshka-JS2020Q3/shelter/assets/icons/icon-marker.svg"
-                        alt="E-mail" />
-                    18 South Park, London
-                </a>
+            <div class="footer__img-wrapper">
+                <img class="footer__img content__img" src="/dotoshka-JS2020Q3/shelter/assets/images/footer-puppy.png"
+                    alt="Puppy">
             </div>
-            <img src="/dotoshka-JS2020Q3/shelter/assets/images/footer-puppy.png" alt="Puppy">
         </div>
     </footer>
 </body>
