@@ -1,4 +1,23 @@
 /* Variables */
+/* Fonts */
+@font-face {
+  font-family: 'Georgia';
+  src: url("../fonts/Georgia/Georgia.eot");
+  src: local("Georgia"), url("../fonts/Georgia/Georgia.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia/Georgia.woff2") format("woff2"), url("../fonts/Georgia/Georgia.woff") format("woff"), url("../fonts/Georgia/Georgia.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url("../fonts/Georgia/Georgia-Bold.eot");
+  src: local("Georgia Bold"), local("Georgia-Bold"), url("../fonts/Georgia/Georgia-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia/Georgia-Bold.woff2") format("woff2"), url("../fonts/Georgia/Georgia-Bold.woff") format("woff"), url("../fonts/Georgia/Georgia-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Mixin */
 /* Common */
 * {
@@ -118,7 +137,7 @@ html {
 
 /* Friends */
 .slider-button {
-  font-family: Georgia;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.7rem;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -175,7 +194,7 @@ html {
 }
 
 .slider-card__title {
-  font-family: Georgia;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2rem;
   line-height: 110%;
   letter-spacing: 0.06em;
@@ -184,7 +203,7 @@ html {
 }
 
 .slider-card__button {
-  font-family: Georgia;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.7rem;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -258,7 +277,7 @@ html {
 }
 
 .footer-content__title {
-  font-family: Georgia;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 3.5rem;
   font-weight: 400;
   line-height: 130%;
@@ -275,7 +294,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  font-family: Georgia;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2rem;
   font-weight: 400;
   line-height: 115%;
@@ -343,7 +362,7 @@ html {
     margin-bottom: 4rem;
   }
   .footer-content__title {
-    font-family: Georgia;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.5rem;
     font-weight: 400;
     font-style: normal;

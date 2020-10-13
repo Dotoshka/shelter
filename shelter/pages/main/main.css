@@ -1,4 +1,23 @@
 /* Variables */
+/* Fonts */
+@font-face {
+  font-family: 'Georgia';
+  src: url("../fonts/Georgia/Georgia.eot");
+  src: local("Georgia"), url("../fonts/Georgia/Georgia.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia/Georgia.woff2") format("woff2"), url("../fonts/Georgia/Georgia.woff") format("woff"), url("../fonts/Georgia/Georgia.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url("../fonts/Georgia/Georgia-Bold.eot");
+  src: local("Georgia Bold"), local("Georgia-Bold"), url("../fonts/Georgia/Georgia-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia/Georgia-Bold.woff2") format("woff2"), url("../fonts/Georgia/Georgia-Bold.woff") format("woff"), url("../fonts/Georgia/Georgia-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Mixin */
 /* Common */
 * {
@@ -118,7 +137,7 @@ html {
 
 /* Friends */
 .slider-button {
-  font-family: Georgia;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.7rem;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -175,7 +194,7 @@ html {
 }
 
 .slider-card__title {
-  font-family: Georgia;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2rem;
   line-height: 110%;
   letter-spacing: 0.06em;
@@ -184,7 +203,7 @@ html {
 }
 
 .slider-card__button {
-  font-family: Georgia;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.7rem;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -258,7 +277,7 @@ html {
 }
 
 .footer-content__title {
-  font-family: Georgia;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 3.5rem;
   font-weight: 400;
   line-height: 130%;
@@ -275,7 +294,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  font-family: Georgia;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2rem;
   font-weight: 400;
   line-height: 115%;
@@ -343,7 +362,7 @@ html {
     margin-bottom: 4rem;
   }
   .footer-content__title {
-    font-family: Georgia;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.5rem;
     font-weight: 400;
     font-style: normal;
@@ -420,7 +439,7 @@ html {
 }
 
 .start-screen-content__title {
-  font-family: Georgia;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 4.4rem;
   font-weight: 400;
   line-height: 130%;
@@ -428,7 +447,7 @@ html {
 }
 
 .start-screen-content__subtitle {
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 160%;
@@ -437,7 +456,7 @@ html {
 }
 
 .start-screen-content__button {
-  font-family: Georgia;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.7rem;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -472,7 +491,7 @@ html {
 }
 
 .about-content__title {
-  font-family: Georgia;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 3.5rem;
   font-weight: 400;
   line-height: 130%;
@@ -481,7 +500,7 @@ html {
 }
 
 .about-content__text {
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 160%;
@@ -509,7 +528,7 @@ html {
 }
 
 .friends__title {
-  font-family: Georgia;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 3.5rem;
   font-weight: 400;
   line-height: 130%;
@@ -519,7 +538,7 @@ html {
 }
 
 .friends__button {
-  font-family: Georgia;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.7rem;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -578,7 +597,7 @@ html {
 }
 
 .help__title {
-  font-family: Georgia;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 3.5rem;
   font-weight: 400;
   line-height: 130%;
@@ -609,7 +628,7 @@ html {
 }
 
 .help-list__title {
-  font-family: Georgia;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2rem;
   font-weight: 400;
   line-height: 115%;
@@ -647,7 +666,7 @@ html {
 }
 
 .donation-content__title {
-  font-family: Georgia;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 3.5rem;
   font-weight: 400;
   line-height: 130%;
@@ -657,7 +676,7 @@ html {
 }
 
 .donation-content__bank {
-  font-family: Georgia;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.5rem;
   line-height: 110%;
   letter-spacing: 0.06em;
@@ -681,7 +700,7 @@ html {
 }
 
 .donation-content__card-number {
-  font-family: Georgia;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2rem;
   font-weight: 400;
   line-height: 115%;
@@ -698,7 +717,7 @@ html {
 }
 
 .donation-content__legal {
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
   font-size: 1.2rem;
   line-height: 150%;
@@ -825,7 +844,7 @@ html {
     text-align: center;
   }
   .start-screen-content__title {
-    font-family: Georgia;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.5rem;
     font-weight: 400;
     font-style: normal;
@@ -854,7 +873,7 @@ html {
     text-align: justify;
   }
   .about-content__title {
-    font-family: Georgia;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.5rem;
     font-weight: 400;
     font-style: normal;
@@ -875,7 +894,7 @@ html {
     padding-bottom: 4.2rem;
   }
   .friends__title {
-    font-family: Georgia;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.5rem;
     font-weight: 400;
     font-style: normal;
@@ -916,7 +935,7 @@ html {
     padding: 4.2rem 0;
   }
   .help__title {
-    font-family: Georgia;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.5rem;
     font-weight: 400;
     font-style: normal;
@@ -950,7 +969,7 @@ html {
     margin-bottom: 1.8rem;
   }
   .help-list__title {
-    font-family: Georgia;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 110%;
@@ -973,7 +992,7 @@ html {
             align-items: center;
   }
   .donation-content__title {
-    font-family: Georgia;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.5rem;
     font-weight: 400;
     font-style: normal;
@@ -986,14 +1005,14 @@ html {
     display: inline-block;
   }
   .donation-content__bank {
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 160%;
     letter-spacing: 0;
   }
   .donation-content__card-number {
-    font-family: Georgia;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 110%;

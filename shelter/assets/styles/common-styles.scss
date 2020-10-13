@@ -17,17 +17,45 @@ radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 $color-background-footer: url(../../assets/images/noise_transparent@2x.png), 
 radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 
+/* Fonts */
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('../fonts/Georgia/Georgia.eot');
+    src: local('Georgia'),
+        url('../fonts/Georgia/Georgia.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Georgia/Georgia.woff2') format('woff2'),
+        url('../fonts/Georgia/Georgia.woff') format('woff'),
+        url('../fonts/Georgia/Georgia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('../fonts/Georgia/Georgia-Bold.eot');
+    src: local('Georgia Bold'), local('Georgia-Bold'),
+        url('../fonts/Georgia/Georgia-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Georgia/Georgia-Bold.woff2') format('woff2'),
+        url('../fonts/Georgia/Georgia-Bold.woff') format('woff'),
+        url('../fonts/Georgia/Georgia-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Mixin */
 
 @mixin paragraph-l {
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 160%;
 }
 
 @mixin h3 {
-    font-family: Georgia;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 3.5rem;
     font-weight: 400;
     line-height: 130%;
@@ -36,7 +64,7 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20
 }
 
 @mixin h3-mobile {
-    font-family: Georgia;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.5rem;
     font-weight: 400;
     font-style: normal;
@@ -47,7 +75,7 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20
 }
 
 @mixin h4 {
-    font-family: Georgia;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2rem;
     font-weight: 400;
     line-height: 115%;
@@ -57,7 +85,7 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20
 }
 
 @mixin h5 {
-    font-family: Georgia;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 110%;
@@ -67,7 +95,7 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20
 }
 
 @mixin button_primary {
-    font-family: Georgia;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.7rem;
     line-height: 130%;
     letter-spacing: 0.06em;
@@ -222,7 +250,7 @@ html {
     }
 
     &__title {
-        font-family: Georgia;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 2rem;
         line-height: 110%;
         letter-spacing: 0.06em;
