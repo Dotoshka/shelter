@@ -6,6 +6,7 @@
     padding: 3rem 0;
     position: fixed;
     background-color: $color-light-xl;
+    height: 12rem;
 }
 
 .logo__title { color: $color-dark-l; }
@@ -59,6 +60,7 @@
 
 .card-container {
     margin: 1.5rem 0;
+    &:nth-child(n + 9) { display: none; }
 }
 
 /* Tablet */
@@ -112,14 +114,32 @@
     }
 
     .header { max-width: 100%; }
-    .menu { display: none; }
 
     .burger-menu {
         display: initial;
-        &:hover {
-            cursor: pointer;
-            transform: scale(1.05);
-        }
+    }
+
+    .menu {
+        background-color: $color-dark-3xl;
+        width: 32rem;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        right: -32rem;
+        transform: translateX(0);
+        transition: transform 300ms ease-in-out; 
+        padding: 3rem 1rem 0;
+        padding-top: 24.8rem;
+
+        .list {
+            flex-direction: column;
+            width: 100%;
+            &__item:not(:last-child) { margin-bottom: 4rem; }
+            &__link { font-size: 3.2rem; }
+        }  
     }
 
    /* Friends */

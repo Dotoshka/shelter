@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shelter</title>
     <link rel="stylesheet" href="main.css">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
     <header class="header-container">
         <h1>Cozy House</h1>
-        <div class="wrapper header">
-            <div class="logo">
+        <div class="wrapper header main">
+            <div class="logo main" id="logo" data-main-page>
                 <div class="logo__title">
                     Cozy House
                 </div>
@@ -20,10 +21,10 @@
                     Shelter for pets in Boston
                 </div>
             </div>
-            <nav class="menu">
+            <nav class="menu main" id="menu-window">
                 <ul class="list">
                     <li class="list__item list__item_active">
-                        <a class="list__link" href="#">
+                        <a class="list__link" href="./main.html">
                             About the shelter
                         </a>
                     </li>
@@ -34,24 +35,24 @@
                         </a>
                     </li>
                     <li class="list__item">
-                        <a class="list__link" href="#">
+                        <a class="list__link" href="javascript:void(0)">
                             Help the shelter
                         </a>
                     </li>
                     <li class="list__item">
-                        <a class="list__link" href="#">
+                        <a class="list__link" href="javascript:void(0)">
                             Contacts
                         </a>
                     </li>
                 </ul>
-            </nav>
-            <div class="burger-menu">
-                <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line y1="21" x2="30" y2="21" stroke="#F1CDB3" stroke-width="2"/>
-                    <line y1="11" x2="30" y2="11" stroke="#F1CDB3" stroke-width="2"/>
-                    <line y1="1" x2="30" y2="1" stroke="#F1CDB3" stroke-width="2"/>
-                </svg>                    
-            </div>
+            </nav>        
+        </div>
+        <div class="burger-menu" id="burger-menu">
+            <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="21" x2="30" y2="21" stroke="#F1CDB3" stroke-width="2"/>
+                <line y1="11" x2="30" y2="11" stroke="#F1CDB3" stroke-width="2"/>
+                <line y1="1" x2="30" y2="1" stroke="#F1CDB3" stroke-width="2"/>
+            </svg>                    
         </div>
     </header>
     <main>
@@ -67,7 +68,7 @@
                         with an extremely wide and open heart. He or she
                         will love you more than anybody else in the world, you will see!
                     </p>
-                    <button class="start-screen-content__button" type="button">
+                    <button class="start-screen-content__button" type="button" data-pets-page>
                         Make a friend
                     </button>
                 </div>
@@ -114,32 +115,15 @@
                         <img class="slider-button__icon" src="../../assets/icons/arrow-left.svg"
                             alt="">
                     </button>
-                    <div class="slider-cards">
-                        <div class="slider-card">
-                            <img class="slider-card__img"
-                                src="../../assets/images/pets/pets-katrine.png" alt="Katrine">
-                            <p class="slider-card__title">Katrine</p>
-                            <button class="slider-card__button">Learn more</button>
-                        </div>
-                        <div class="slider-card">
-                            <img class="slider-card__img"
-                                src="../../assets/images/pets/pets-jennifer.png" alt="Jennifer">
-                            <p class="slider-card__title">Jennifer</p>
-                            <button class="slider-card__button">Learn more</button>
-                        </div>
-                        <div class="slider-card">
-                            <img class="slider-card__img"
-                                src="../../assets/images/pets/pets-woody.png" alt="Woody">
-                            <p class="slider-card__title">Woody</p>
-                            <button class="slider-card__button">Learn more</button>
-                        </div>
+                    <div class="slider-cards" data-slider-cards>
+                        
                     </div>
                     <button class="slider-button">
                         <img class="slider-button__icon" src="../../assets/icons/arrow-right.svg"
                             alt="">
                     </button>
                 </div>
-                <button class="friends__button">Get to know the rest</button>
+                <button class="friends__button" data-pets-page>Get to know the rest</button>
             </div>
         </section>
         <section class="wrapper help">
@@ -261,6 +245,8 @@
             </div>
         </div>
     </footer>
+    
+    <div class="overlay" id="overlay"></div>
 </body>
 
 </html>
