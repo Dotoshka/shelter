@@ -5,6 +5,7 @@
 .header-container {
     padding: 3rem 0;
     position: fixed;
+    z-index: 1; 
     background-color: $color-light-xl;
     height: 12rem;
 }
@@ -22,13 +23,21 @@
     }
     
      .list__item_active a { color: $color-dark-3xl;}
+
+     .list__item_disabled {
+        cursor: default;
+        a {
+            pointer-events: none;
+            text-decoration: none;
+          }
+      }
 }
 
 /* Friends */
 
 .friends-container { 
     background-color: $color-light-l;
-    padding-top: 12rem; 
+    padding-top: 12rem;
 }
 
 .friends {
@@ -59,7 +68,7 @@
 }
 
 .card-container {
-    display: none;
+    display: none; 
 }
 
 .card-container.active {
@@ -112,6 +121,10 @@
 @media (max-width: 767px) {
 
     /* Header */
+    .header-container.active {
+        position: absolute;
+        z-index: unset; 
+    }
 
     .header-container {
         padding-right: 5.3rem;

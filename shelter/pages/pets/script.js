@@ -13,6 +13,7 @@ overlay.addEventListener('click', () => {
     }
 })
 
+
 /* Buttons */
 const mainPageButtons = document.querySelectorAll('[data-main-page]');
 mainPageButtons.forEach(button => { button.addEventListener('click', () => document.location = '../main/main.html'); })
@@ -37,9 +38,8 @@ menuButton.addEventListener('click', () => {
 });
 
 const showMenu = () => {
-
-    body.style.overflow = 'hidden';
-    header.style.position = 'absolute';
+    body.style.overflowY = 'hidden';
+    header.classList.add('active');
     overlay.classList.add('active');
     menuButton.classList.add('active');
     menuWindow.classList.add('active');
@@ -49,9 +49,8 @@ const showMenu = () => {
 }
 
 const hideMenu = () => {
-
-    body.style.overflow = 'initial';
-    header.style.position = 'fixed';
+    body.style.overflowY = 'initial';
+    header.classList.remove('active');
     overlay.classList.remove('active');
     menuWindow.classList.remove('active', 'main');
     logo.classList.remove('active', 'main');
@@ -113,7 +112,6 @@ fetch('../../assets/pets.json')
         createPopups();
         checkItemsPerPage();
         changeImgSet(currentPage, itemsPerPage);
-        //document.querySelector("#currentPage").innerText = (currentPage + 1).toString();
     })
 
 const createPets = (petsList) => {
@@ -196,7 +194,7 @@ const changeImgSet = (currentPage, itemsPerPage) => {
     let sliderItems = sliderCards.children;
     let startAdd = (currentPage - 1) * itemsPerPage;
     let endAdd = (currentPage - 1) * itemsPerPage + itemsPerPage;
-    
+
     for (let j = 0; j < sliderItems.length; j++) {
         sliderItems[j].classList.remove('active');
     }
