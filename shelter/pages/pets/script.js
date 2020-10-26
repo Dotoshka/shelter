@@ -306,6 +306,24 @@ sliderCards.addEventListener('click', function (e) {
     if (e.target !== this && !cardContainer && this.contains(e.target)) {
         const popupId = e.target.closest('[data-modal-target]').dataset.modalTarget
         const popup = document.querySelector(popupId);
+        popup.addEventListener('mouseover', (event) => {
+            if (event.target.closest('.popup') && !event.target.closest('.close-button')) {
+              const closeButton = document.querySelectorAll('[data-close-button]');
+              closeButton.forEach((button) => {
+                button.style.background = 'none';
+                button.style.border = '2px solid #F1CDB3';
+              })
+            }
+          })
+          popup.addEventListener('mouseout', (event) => {
+            if (event.target.closest('.popup')) {
+              const closeButton = document.querySelectorAll('[data-close-button]');
+              closeButton.forEach((button) => {
+                button.style.backgroundColor = '#FDDCC4';
+                button.style.border = '2px solid #FDDCC4';
+              })
+            }
+          })
         openModal(popup);
     }
 });

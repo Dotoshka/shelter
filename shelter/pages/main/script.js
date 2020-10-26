@@ -3,10 +3,10 @@ const body = document.querySelector('body');
 const overlay = document.getElementById('overlay');
 
 overlay.addEventListener('click', () => {
-    const popups = document.querySelectorAll('.popup.active');
-    popups.forEach(popup => {
-      closeModal(popup);
-    })
+  const popups = document.querySelectorAll('.popup.active');
+  popups.forEach(popup => {
+    closeModal(popup);
+  })
 
   if (openMenu === true) {
     hideMenu();
@@ -72,12 +72,12 @@ let prevSet = [];
 let pets = [];
 
 fetch('../../assets/pets.json')
-    .then(res => res.json())
-    .then(data => {
-        pets = data;
-        createPets();
-        createPopups();
-    })
+  .then(res => res.json())
+  .then(data => {
+    pets = data;
+    createPets();
+    createPopups();
+  })
 
 createElements = (petsList) => {
   let str = '';
@@ -128,10 +128,10 @@ sliderButton.forEach(button => {
 const popupsContainer = document.querySelector('.popups-container');
 
 const createPopups = () => {
-    for (i = 0; i < pets.length; i++) {
+  for (i = 0; i < pets.length; i++) {
 
-        popupsContainer.insertAdjacentHTML('beforeend',
-            `<div class="popup" id=${pets[i].name}>
+    popupsContainer.insertAdjacentHTML('beforeend',
+      `<div class="popup" id=${pets[i].name}>
             <button class="close-button" data-close-button><img src=../../assets/icons/icon-close.svg alt="Close"></button>
             <div class="popup__img"><img src=${pets[i].img} alt=${pets[i].name} class="content__img"></div>
             <div class="popup-content">
@@ -146,26 +146,43 @@ const createPopups = () => {
                 </ul>
             </div>   
         </div>`
-        );
-    }
+    );
+  }
 }
 
 sliderCards.addEventListener('click', function (e) {
   let cardContainer = e.target.classList.contains('card-container');
   if (e.target !== this && !cardContainer && this.contains(e.target)) {
-      const popupId = e.target.closest('[data-modal-target]').dataset.modalTarget
-      const popup = document.querySelector(popupId);
-      //e.target.classList.add('active');
-      openModal(popup);
+    const popupId = e.target.closest('[data-modal-target]').dataset.modalTarget
+    const popup = document.querySelector(popupId);
+    popup.addEventListener('mouseover', (event) => {
+      if (event.target.closest('.popup') && !event.target.closest('.close-button')) {
+        const closeButton = document.querySelectorAll('[data-close-button]');
+        closeButton.forEach((button) => {
+          button.style.background = 'none';
+          button.style.border = '2px solid #F1CDB3';
+        })
+      }
+    })
+    popup.addEventListener('mouseout', (event) => {
+      if (event.target.closest('.popup')) {
+        const closeButton = document.querySelectorAll('[data-close-button]');
+        closeButton.forEach((button) => {
+          button.style.backgroundColor = '#FDDCC4';
+          button.style.border = '2px solid #FDDCC4';
+        })
+      }
+    })
+    e.target.classList.add('active');
+    openModal(popup);
   }
 });
 
 popupsContainer.addEventListener('click', function (e) {
   const closeButton = e.target.closest('[data-close-button]');
   if (e.target !== this && closeButton) {
-      const popup = closeButton.closest('.popup');
-      //e.target.classList.remove('active');
-      closeModal(popup);
+    const popup = closeButton.closest('.popup');
+    closeModal(popup);
   }
 });
 
